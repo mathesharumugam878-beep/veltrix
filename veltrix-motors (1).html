@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Veltrix Motors — Drive Beyond Limits.</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0a0b0e;--el:#1e90ff;--si:#c0c6d0;--gl:rgba(255,255,255,.06);--bd:rgba(255,255,255,.12)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--ink);color:#fff;font-family:Inter,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.glass{background:var(--gl);backdrop-filter:blur(16px);border:1px solid var(--bd);border-radius:20px}
+.wrap{max-width:1250px;margin:auto;padding:0 20px}section{padding:90px 0}
+h2{font-family:Orbitron,sans-serif;font-size:clamp(1.7rem,4vw,2.9rem);font-weight:900;margin-bottom:30px}
+.el{color:var(--el)}.mut{color:var(--si)}
+.btn{display:inline-block;padding:13px 28px;border-radius:99px;background:var(--el);font-weight:700;box-shadow:0 0 28px rgba(30,144,255,.45);transition:.25s}
+.btn:hover{transform:translateY(-2px) scale(1.04);filter:brightness(1.2)}.btn.g{background:none;border:1px solid rgba(255,255,255,.35);box-shadow:none}
+input,select,textarea{width:100%;background:var(--gl);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;color:#fff;font:inherit;outline:0}
+input:focus,select:focus,textarea:focus{border-color:var(--el)}option{color:#000}
+.rv{opacity:0;transform:translateY(40px);transition:.7s}.rv.on{opacity:1;transform:none}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.05);backdrop-filter:blur(16px);border-bottom:1px solid var(--bd);transition:.3s;animation:down .7s}
+nav.s{background:rgba(0,0,0,.92)}@keyframes down{from{transform:translateY(-100%)}}
+.nb{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{font-family:Orbitron;font-weight:900;letter-spacing:.12em}.links{display:flex;gap:22px;font-size:.9rem;color:var(--si)}.links a:hover{color:#fff}
+.nr{display:flex;align-items:center;gap:14px}.ham{display:none;font-size:1.6rem}
+#sr{max-width:600px;margin:0 auto;padding:0 20px;overflow:hidden;max-height:0;transition:.35s}#sr.o{max-height:420px;padding-bottom:14px}
+.sri{display:flex;gap:12px;align-items:center;padding:8px;border-radius:12px;cursor:pointer}.sri:hover{background:var(--gl)}.sri img{width:64px;height:44px;border-radius:8px}
+/* hero */
+#home{height:100vh;position:relative;overflow:hidden;display:flex;align-items:center;padding:0}
+#hb{position:absolute;inset:0;animation:zoom 22s linear forwards}@keyframes zoom{to{transform:scale(1.18)}}
+#home:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 5%,rgba(0,0,0,.55) 55%,transparent),linear-gradient(0deg,var(--ink),transparent 40%)}
+.hc{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;width:100%}
+.hc h1{font-family:Orbitron;font-size:clamp(2.4rem,7vw,5.2rem);line-height:1.05;font-weight:900}
+.fu{opacity:0;transform:translateY(40px);animation:fu .8s forwards}@keyframes fu{to{opacity:1;transform:none}}
+.sp{display:flex;flex-direction:column;gap:14px;align-items:flex-end}.sp div{padding:16px 30px;width:250px;animation:fl 4s ease-in-out infinite}.sp b{font-size:1.9rem;color:var(--el);display:block}
+@keyframes fl{50%{transform:translateY(-10px)}}
+/* cards */
+.fl{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}.fl button{padding:9px 20px;border-radius:99px;border:1px solid var(--bd);transition:.2s}.fl button.a{background:var(--el);border-color:var(--el);box-shadow:0 0 20px rgba(30,144,255,.5)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{overflow:hidden;transition:.35s}.card:hover{transform:translateY(-8px);box-shadow:0 0 30px rgba(30,144,255,.3)}
+.ci{height:200px;position:relative;overflow:hidden}.ci img{transition:.7s}.card:hover .ci img{transform:scale(1.1)}
+.hrt{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;background:rgba(0,0,0,.55);font-size:1.15rem}.hrt.on{color:#ff3b5c;animation:pop .4s}@keyframes pop{50%{transform:scale(1.5)}}
+.cb{padding:18px}.cb small{color:var(--el);letter-spacing:.15em;text-transform:uppercase;font-size:.7rem}.cb h3{font-size:1.25rem;margin:2px 0}.pr{font-size:1.5rem;font-weight:900;margin:10px 0}
+.ca{display:flex;gap:8px}.ca .btn{flex:1;padding:9px;text-align:center;font-size:.85rem}.cmp{padding:0 14px;border-radius:99px;border:1px solid var(--bd)}.cmp.on{background:var(--el)}
+/* EV */
+#electric{position:relative;overflow:hidden}#electric:before{content:"";position:absolute;top:-150px;left:-150px;width:500px;height:500px;border-radius:50%;background:rgba(30,144,255,.3);filter:blur(120px);animation:pl 5s infinite}@keyframes pl{50%{opacity:.3}}
+.evi{height:min(480px,50vw);border-radius:26px;overflow:hidden;box-shadow:0 0 50px rgba(30,144,255,.3)}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:26px 0}.st div{padding:24px;text-align:center}.st b{font-size:2.1rem;color:var(--el);display:block;font-family:Orbitron}
+.bars{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bars div{padding:18px}.bt{height:8px;background:var(--bd);border-radius:9px;overflow:hidden;margin-top:8px}.bt i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--el),#67e8f9);transition:1.5s;box-shadow:0 0 12px var(--el)}
+/* emi */.emi{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:34px}.emi label{display:flex;justify-content:space-between;font-size:.85rem;color:var(--si);margin:14px 0 4px}.emi input{padding:0;accent-color:var(--el)}
+.res{padding:18px 22px;border-radius:16px;background:var(--gl);margin-bottom:14px}.res.m{background:rgba(30,144,255,.2);border:1px solid var(--el)}.res b{display:block;font-size:1.9rem}
+/* services/about */.sv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.sv div{padding:28px;transition:.3s}.sv div:hover{transform:translateY(-8px);box-shadow:0 0 30px rgba(30,144,255,.3)}.sv span{display:flex;width:56px;height:56px;border-radius:14px;background:rgba(30,144,255,.2);align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:12px;transition:.6s}.sv div:hover span{transform:rotate(360deg)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:30px}.full{grid-column:1/-1}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+footer{border-top:1px solid var(--bd);padding:30px;text-align:center;color:var(--si);font-size:.9rem}
+/* modal */
+.md{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.8);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:16px}.md.o{display:flex;animation:fi .3s}@keyframes fi{from{opacity:0}}
+.mb{width:min(1000px,100%);max-height:92vh;overflow:auto;background:#101216;padding:26px;position:relative;animation:sc .35s}@keyframes sc{from{transform:scale(.92);opacity:0}}
+.x{position:absolute;top:14px;right:18px;font-size:1.6rem;z-index:3}
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:26px}.mi{height:300px;border-radius:18px;overflow:hidden}.th{display:flex;gap:8px;margin-top:8px}.th div{flex:1;height:64px;border-radius:10px;overflow:hidden;opacity:.5;cursor:pointer;border:2px solid transparent}.th div.a{opacity:1;border-color:var(--el)}
+.tb{display:flex;gap:20px;border-bottom:1px solid var(--bd);margin:22px 0 14px;overflow:auto}.tb button{padding-bottom:10px;color:var(--si);white-space:nowrap;border-bottom:2px solid transparent}.tb button.a{color:#fff;border-color:var(--el)}
+.tp div{display:flex;justify-content:space-between;padding:11px 4px;border-bottom:1px solid var(--bd)}.tp span{color:var(--si)}
+table{width:100%;border-collapse:collapse;min-width:520px}td,th{padding:12px;border-top:1px solid var(--bd);text-align:center}td:first-child{text-align:left;color:var(--si)}th img{height:90px;border-radius:12px;margin-bottom:6px}
+#cb{position:fixed;bottom:22px;left:50%;transform:translate(-50%,120px);z-index:60;transition:.4s}#cb.o{transform:translate(-50%,0)}
+#toast{position:fixed;top:80px;right:20px;z-index:200;padding:14px 20px;transform:translateX(130%);transition:.4s}#toast.o{transform:none}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}.links,.nr .dsk{display:none}.ham{display:block}.hc,.dg,.emi,.ct{grid-template-columns:1fr}.sp{display:none}.sv{grid-template-columns:1fr 1fr}.st{grid-template-columns:1fr 1fr}.links.o{display:flex;flex-direction:column;position:absolute;top:66px;left:0;right:0;background:rgba(0,0,0,.95);padding:20px}}
+@media(max-width:560px){.grid,.sv,.bars,.form{grid-template-columns:1fr}}
+</style></head><body>
+<nav id="nav"><div class="wrap nb"><a href="#home" class="logo">VELTRIX <span class="el">MOTORS</span></a>
+<div class="links" id="lk"><a href="#home">Home</a><a href="#vehicles">Vehicles</a><a href="#" onclick="openCmp();return false">Compare</a><a href="#electric">Electric</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<div class="nr"><button onclick="sr.classList.toggle('o');q.focus()" aria-label="Search">🔍</button><a href="#testdrive" class="btn dsk" style="padding:9px 18px;font-size:.85rem">Book Test Drive</a><button class="ham" onclick="lk.classList.toggle('o')">☰</button></div></div>
+<div id="sr"><input id="q" placeholder="Search name, category, fuel or price…" oninput="search()"><div id="sres"></div></div></nav>
+
+<section id="home"><div id="hb"><img id="hi" alt="Veltrix supercar"></div><div class="wrap hc"><div>
+<p class="el fu" style="letter-spacing:.4em;font-size:.85rem;margin-bottom:14px">DRIVE BEYOND LIMITS.</p>
+<h1 class="fu" style="animation-delay:.2s">DRIVE THE FUTURE</h1>
+<p class="mut fu" style="animation-delay:.4s;margin:18px 0 30px;max-width:480px;font-size:1.1rem">Experience performance, technology and design engineered for the road ahead.</p>
+<div class="fu" style="animation-delay:.6s;display:flex;gap:14px;flex-wrap:wrap"><a href="#vehicles" class="btn">Explore Vehicles</a><a href="#testdrive" class="btn g">Book a Test Drive</a></div></div>
+<div class="sp"><div class="glass fu" style="animation-delay:.8s,0s"><b>450</b>HP</div><div class="glass fu" style="animation-delay:1s,.5s"><b>3.8s</b>0–100 km/h</div><div class="glass fu" style="animation-delay:1.2s,1s"><b>280</b>km/h Top Speed</div></div></div></section>
+
+<section id="vehicles"><div class="wrap"><h2 class="rv">EXPLORE OUR VEHICLES</h2><div class="fl" id="fl"></div><div class="grid" id="grid"></div></div></section>
+
+<section id="electric"><div class="wrap" style="position:relative"><h2 class="rv" style="text-align:center">THE FUTURE IS <span class="el">ELECTRIC</span></h2>
+<div class="evi rv"><img id="evi" alt="Veltrix electric vehicle" loading="lazy"></div>
+<div class="st"><div class="glass rv"><b><i data-to="620">0</i> km</b>Range</div><div class="glass rv"><b><i data-to="800">0</i>V</b>Architecture</div><div class="glass rv"><b><i data-to="20">0</i> min</b>Fast Charging</div><div class="glass rv"><b><i data-to="0">0</i></b>Emissions</div></div>
+<div class="bars" id="bars"></div></div></section>
+
+<section><div class="wrap" style="max-width:1000px"><h2 class="rv">EMI CALCULATOR</h2><div class="glass emi rv"><div>
+<label>Vehicle Price (₹)<b id="v1"></b></label><input type="range" id="pr" min="1000000" max="15000000" step="50000" value="4599000">
+<label>Down Payment (₹)<b id="v2"></b></label><input type="range" id="dp" min="0" max="5000000" step="25000" value="900000">
+<label>Loan Duration (years)<b id="v3"></b></label><input type="range" id="yr" min="1" max="8" value="5">
+<label>Interest Rate (%)<b id="v4"></b></label><input type="range" id="rt" min="6" max="16" step=".1" value="8.5"></div>
+<div><div class="res m">Monthly EMI<b>₹<span id="o1">0</span></b></div><div class="res">Total Interest<b>₹<span id="o2">0</span></b></div><div class="res">Total Amount Payable<b>₹<span id="o3">0</span></b></div></div></div></div></section>
+
+<section id="services"><div class="wrap"><h2 class="rv">SERVICES</h2><div class="sv" id="sv"></div></div></section>
+
+<section id="about"><div class="wrap"><h2 class="rv">ENGINEERED FOR THE <span class="el">JOURNEY</span></h2>
+<p class="mut rv" style="max-width:760px;font-size:1.1rem">Veltrix Motors began with one belief: a car should feel as advanced as it looks. For over two decades we have combined precision engineering, intelligent technology and timeless design to build vehicles that move people — and moments — forward.</p>
+<div class="st"><div class="glass rv"><b><i data-to="25">0</i>+</b>Years Experience</div><div class="glass rv"><b><i data-to="50">0</i>+</b>Vehicle Models</div><div class="glass rv"><b><i data-to="100">0</i>K+</b>Happy Customers</div><div class="glass rv"><b><i data-to="30">0</i>+</b>Service Centers</div></div></div></section>
+
+<section id="testdrive"><div class="wrap" style="max-width:800px"><h2 class="rv">BOOK A TEST DRIVE</h2>
+<form class="glass form rv" id="tf"><input name="name" placeholder="Full Name" required><input name="email" type="email" placeholder="Email" required><input name="phone" type="tel" placeholder="Phone" required><input name="city" placeholder="City" required>
+<select name="vehicle" id="vs" class="full" required><option value="">Select Vehicle</option></select><input name="date" type="date" required><input name="time" type="time" required><textarea name="message" class="full" rows="3" placeholder="Message"></textarea><button class="btn full">Confirm Booking</button></form>
+<div class="glass" id="ok" style="display:none;padding:50px;text-align:center"><div style="font-size:4rem">✅</div><h2 style="margin:12px 0">Your Test Drive Is Booked!</h2><p class="mut">We'll confirm by email shortly.</p><button class="btn g" style="margin-top:20px" onclick="ok.style.display='none';tf.style.display='grid';tf.reset()">Book Another</button></div></div></section>
+
+<section id="contact"><div class="wrap"><h2 class="rv">CONTACT US</h2><div class="ct"><div class="mut rv" style="display:grid;gap:14px;align-content:start"><p>📞 <a href="tel:+919344840320">+91 93448 40320</a></p><p>📍 12 Velocity Avenue, Chennai, Tamil Nadu</p><p>🕘 Mon–Sat, 9:00 AM – 7:00 PM</p><p>📸 Instagram &nbsp; 🐦 Twitter &nbsp; ▶️ YouTube</p><div class="glass" style="height:150px;display:flex;align-items:center;justify-content:center">Map placeholder</div></div>
+<form class="glass rv" id="cf" style="padding:26px;display:grid;gap:14px"><input name="name" placeholder="Name" required><input name="email" type="email" placeholder="Email" required><textarea name="message" rows="4" placeholder="Message" required></textarea><button class="btn">Send Message</button></form></div></div></section>
+<footer>© Veltrix Motors — Drive Beyond Limits.</footer>
+
+<div id="cb" class="glass" style="padding:10px 14px;display:flex;gap:12px;align-items:center"><span id="cc"></span><button class="btn" style="padding:8px 18px" onclick="openCmp()">Compare</button><button onclick="cmp=[];sync()">✕</button></div>
+<div id="toast" class="glass"></div>
+<div class="md" id="md" onclick="if(event.target==md)md.classList.remove('o')"><div class="mb glass"><button class="x" onclick="md.classList.remove('o')">✕</button><div id="mc"></div></div></div>
+
+<script>
+const U=i=>`https://images.unsplash.com/photo-${i}?auto=format&fit=crop&w=1400&q=80`;
+// ===== IMAGE CONFIG: replace URLs here =====
+const P={sp:['1503376780353-7e6692767b70','1544636331-e26879cd4d9b','1614200187524-dc4b892acf16'],suv:['1533473359331-0135ef1b58bf','1519641471654-76ce0107ad1b','1492144534655-ae79c964c9d7'],sed:['1494976388531-d1058494cdd8','1552519507-da3b142c6e3d','1619767886558-efdc259cde1a'],ev:['1560958089-b8a1929cea89','1617469767053-d3b523a0b982','1593941707882-a5bba14938c7'],lux:['1618843479313-40f8afb4b4d8','1583121274602-3e2820c69888','1555215695-3004980ad54e'],sup:['1583121274602-3e2820c69888','1614200187524-dc4b892acf16','1544636331-e26879cd4d9b']};
+const IMG={hero:U('1583121274602-3e2820c69888').replace('1400','2000'),ev:U('1560958089-b8a1929cea89').replace('1400','1800')};
+const SAFE=['6 Airbags','ABS + EBD','Lane Keep Assist','Adaptive Cruise Control','360° Camera','Autonomous Emergency Braking'],TECH=['12.3" Touch Display','Wireless CarPlay / Android Auto','Digital Cockpit','OTA Software Updates','Premium Audio','Ambient Lighting'];
+const mk=(id,name,cat,type,fuel,price,pl,hp,tq,eng,tr,z,top,rng,seats,boot,pool)=>({id,name,cat,type,fuel,price,pl,hp,tq,eng,tr,z,top,rng,seats,boot,imgs:P[pool].map(U)});
+const V=[mk(1,'Veltrix X1','Sports','Sports Car','Petrol',4599000,'₹45.99 Lakh',420,'520 Nm','3.0L Twin-Turbo V6','8-speed Automatic',4.1,285,'11 km/l',2,'280 L','sp'),
+mk(2,'Veltrix E7','Electric','Electric Sedan','Electric',3850000,'₹38.50 Lakh',350,'640 Nm','Dual Motor AWD','Single-speed',5.2,220,'620 km',5,'480 L','ev'),
+mk(3,'Veltrix R8','SUV','Performance SUV','Petrol',5275000,'₹52.75 Lakh',480,'650 Nm','4.0L Twin-Turbo V8','8-speed Automatic',4.5,270,'9 km/l',5,'560 L','suv'),
+mk(4,'Veltrix GT','Luxury','Luxury Coupe','Petrol',6890000,'₹68.90 Lakh',510,'700 Nm','4.0L V8 Biturbo','8-speed Automatic',3.9,300,'10 km/l',4,'350 L','lux'),
+mk(5,'Veltrix E-S','Electric','Electric SUV','Electric',4725000,'₹47.25 Lakh',400,'700 Nm','Dual Motor AWD','Single-speed',4.9,210,'580 km',5,'540 L','ev'),
+mk(6,'Veltrix ZR','Sports','Supercar','Petrol',12500000,'₹1.25 Crore',720,'780 Nm','5.2L V10','7-speed DCT',2.9,340,'7 km/l',2,'150 L','sup'),
+mk(7,'Veltrix S5','Sedan','Executive Sedan','Petrol',2990000,'₹29.90 Lakh',250,'400 Nm','2.0L Turbo','8-speed Automatic',6.8,240,'15 km/l',5,'480 L','sed')];
+V[4].imgs=[V[4].imgs[1],V[4].imgs[0],V[4].imgs[2]];
+const $=s=>document.querySelector(s),ld=(k,d)=>{try{return JSON.parse(localStorage[k])}catch{return d}};
+let wish=ld('vw',[]),cmp=[],cat='All';
+const spec=v=>v.fuel=='Electric'?v.rng+' range':`${v.hp} HP · 0–100 in ${v.z}s`;
+const FB="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23111'/><text x='50%' y='50%' fill='%231e90ff' font-size='32' text-anchor='middle'>VELTRIX MOTORS</text></svg>";
+const im=(s,a,l=1)=>`<img src="${s}" alt="${a}" ${l?'loading="lazy"':''} onerror="this.onerror=null;this.src='${FB.replace(/'/g,"\\'")}'">`;
+const toast=t=>{const e=$('#toast');e.textContent=t;e.classList.add('o');setTimeout(()=>e.classList.remove('o'),2200)};
+$('#hi').outerHTML=im(IMG.hero,'Veltrix supercar',0).replace('<img','<img id="hi"');$('#evi').outerHTML=im(IMG.ev,'Veltrix electric vehicle');
+// filters + grid
+const CATS=['All','Sedan','SUV','Sports','Luxury','Electric','♥ Wishlist'];
+$('#fl').innerHTML=CATS.map(c=>`<button class="${c=='All'?'a':''}" onclick="cat='${c}';document.querySelectorAll('#fl button').forEach(b=>b.classList.toggle('a',b.textContent==cat));draw()">${c}</button>`).join('');
+function draw(){const L=V.filter(v=>cat=='All'||(cat[0]=='♥'?wish.includes(v.id):v.cat==cat));
+$('#grid').innerHTML=L.map((v,i)=>`<div class="card glass rv" style="transition-delay:${i%4*.08}s"><div class="ci">${im(v.imgs[0],v.name+' '+v.type)}<button class="hrt ${wish.includes(v.id)?'on':''}" onclick="heart(${v.id})" aria-label="Wishlist">${wish.includes(v.id)?'♥':'♡'}</button></div>
+<div class="cb"><small>${v.type}</small><h3>${v.name}</h3><p class="mut" style="font-size:.9rem">${spec(v)}</p><div class="pr">${v.pl}</div><div class="ca"><a class="btn" href="#" onclick="detail(${v.id});return false">View Details</a><button class="cmp ${cmp.includes(v.id)?'on':''}" title="Compare" onclick="tc(${v.id})">⇄</button></div></div></div>`).join('')||'<p class="mut">Nothing here yet.</p>';reveal()}
+function heart(id){wish=wish.includes(id)?wish.filter(x=>x!=id):[...wish,id];localStorage.vw=JSON.stringify(wish);toast(wish.includes(id)?'Added to wishlist':'Removed from wishlist');draw()}
+function tc(id){if(cmp.includes(id))cmp=cmp.filter(x=>x!=id);else if(cmp.length<3)cmp.push(id);else toast('You can compare up to 3 vehicles');sync()}
+function sync(){$('#cb').classList.toggle('o',cmp.length>0);$('#cc').textContent=cmp.length+'/3 selected';draw()}
+function openCmp(){const L=cmp.map(i=>V.find(v=>v.id==i)),R=[['Price',v=>v.pl],['Horsepower',v=>v.hp+' HP'],['Torque',v=>v.tq],['0–100 km/h',v=>v.z+' s'],['Top speed',v=>v.top+' km/h'],['Mileage / Range',v=>v.rng],['Fuel type',v=>v.fuel],['Transmission',v=>v.tr],['Seating',v=>v.seats],['Boot capacity',v=>v.boot],['Safety features',v=>SAFE.length+' features']];
+$('#mc').innerHTML='<h2>COMPARE</h2>'+(L.length?`<div style="overflow:auto"><table><tr><th></th>${L.map(v=>`<th>${im(v.imgs[0],v.name)}<div>${v.name}</div></th>`).join('')}</tr>${R.map(r=>`<tr><td>${r[0]}</td>${L.map(v=>`<td><b>${r[1](v)}</b></td>`).join('')}</tr>`).join('')}</table></div>`:'<p class="mut">Tap the ⇄ button on up to 3 vehicle cards to compare them.</p>');md.classList.add('o')}
+// detail modal
+function detail(id,t='Overview',k=0){const v=V.find(x=>x.id==id),S=[['Engine / Motor',v.eng],['Horsepower',v.hp+' HP'],['Torque',v.tq],['Transmission',v.tr],['0–100 km/h',v.z+' sec'],['Top Speed',v.top+' km/h'],['Mileage / Range',v.rng],['Seating',v.seats+' seats'],['Fuel Type',v.fuel],['Boot',v.boot]];
+const T={Overview:`<div class="st" style="margin:0">${[[v.hp,'HP'],[v.z+'s','0–100'],[v.top,'km/h'],[v.rng,'Range']].map(a=>`<div class="glass"><b style="font-size:1.5rem">${a[0]}</b>${a[1]}</div>`).join('')}</div>`,Specifications:`<div class="tp">${S.map(a=>`<div><span>${a[0]}</span><b>${a[1]}</b></div>`).join('')}</div>`,Features:`<div class="tp">${TECH.map(a=>`<div>⚡ ${a}</div>`).join('')}</div>`,Safety:`<div class="tp">${SAFE.map(a=>`<div>🛡️ ${a}</div>`).join('')}</div>`,Reviews:rvw(id)};
+$('#mc').innerHTML=`<div class="dg"><div><div class="mi">${im(v.imgs[k],v.name+' view '+(k+1),0)}</div><div class="th">${v.imgs.map((s,i)=>`<div class="${i==k?'a':''}" onclick="detail(${id},'${t}',${i})">${im(s,'')}</div>`).join('')}</div></div>
+<div><small class="el" style="letter-spacing:.15em;text-transform:uppercase">${v.type}</small><h2 style="margin:4px 0 6px">${v.name}</h2><div class="pr">${v.pl}</div><p class="mut">The ${v.name} blends razor-sharp engineering with a cabin crafted for the road ahead.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px"><a class="btn" href="#testdrive" onclick="vs.value='${v.name}';md.classList.remove('o')">Book Test Drive</a><button class="btn g" onclick="tc(${id});toast('Compare updated')">Add to Compare</button><button class="btn g" onclick="heart(${id});detail(${id},'${t}',${k})">${wish.includes(id)?'♥ In Wishlist':'♡ Add to Wishlist'}</button></div></div></div>
+<div class="tb">${Object.keys(T).map(x=>`<button class="${x==t?'a':''}" onclick="detail(${id},'${x}',${k})">${x}</button>`).join('')}</div><div style="animation:fi .4s">${T[t]}</div>`;md.classList.add('o')}
+function rvw(id){const R=ld('vr',{})[id]||[];return `<form onsubmit="addR(event,${id})" style="display:grid;gap:10px;margin-bottom:16px"><input name="n" placeholder="Your name" required><select name="r"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select><textarea name="c" placeholder="Share your experience" required></textarea><button class="btn">Submit Review</button></form>`+(R.map(r=>`<div class="glass" style="padding:14px;margin-bottom:10px"><b>${r.n}</b> <span style="color:#facc15">${'★'.repeat(r.r)}${'☆'.repeat(5-r.r)}</span><p class="mut">${r.c}</p><small class="mut">${r.d}</small></div>`).join('')||'<p class="mut">No reviews yet.</p>')}
+function addR(e,id){e.preventDefault();const f=new FormData(e.target),a=ld('vr',{});(a[id]=a[id]||[]).unshift({n:f.get('n'),r:+f.get('r'),c:f.get('c'),d:new Date().toLocaleDateString()});localStorage.vr=JSON.stringify(a);detail(id,'Reviews')}
+// search
+function search(){const s=q.value.trim().toLowerCase(),L=s?V.filter(v=>[v.name,v.cat,v.type,v.fuel,v.pl].join(' ').toLowerCase().includes(s)):[];
+$('#sres').innerHTML=L.map(v=>`<div class="sri" onclick="detail(${v.id});sr.classList.remove('o')">${im(v.imgs[0],'',0)}<span style="flex:1">${v.name}<small class="mut" style="display:block">${v.type} · ${v.fuel}</small></span><b>${v.pl}</b></div>`).join('')||(s?'<p class="mut" style="padding:8px">No vehicles found.</p>':'')}
+// EV bars, services
+$('#bars').innerHTML=[['⚡ Battery',92],['🛣️ Range',88],['🔌 Charging',95],['🚀 Performance',90]].map(a=>`<div class="glass rv"><div style="display:flex;justify-content:space-between">${a[0]}<span>${a[1]}%</span></div><div class="bt"><i data-w="${a[1]}"></i></div></div>`).join('');
+$('#sv').innerHTML=[['🔧','Vehicle Maintenance','Certified technicians, scheduled care.'],['🛟','Roadside Assistance','24/7 help anywhere in India.'],['🛡️','Insurance','Comprehensive cover, instant claims.'],['⚙️','Genuine Parts','Factory-original components.'],['✨','Vehicle Detailing','Showroom shine, inside and out.'],['🔄','Software Updates','Over-the-air feature upgrades.']].map((a,i)=>`<div class="glass rv" style="transition-delay:${i%3*.1}s"><span>${a[0]}</span><h3>${a[1]}</h3><p class="mut">${a[2]}</p></div>`).join('');
+$('#vs').innerHTML+=V.map(v=>`<option>${v.name}</option>`).join('');
+// EMI with animated numbers
+const shown={o1:0,o2:0,o3:0},fmt=n=>Math.round(n).toLocaleString('en-IN');
+function tween(id,to){const from=shown[id],t0=performance.now();(function f(t){const p=Math.min((t-t0)/450,1);shown[id]=from+(to-from)*p;$('#'+id).textContent=fmt(shown[id]);if(p<1)requestAnimationFrame(f)})(t0)}
+function emi(){const p=+pr.value,d=Math.min(+dp.value,p),y=+yr.value,rt=+$('#rt').value,P=p-d,r=rt/1200,n=y*12,e=P*r*(1+r)**n/((1+r)**n-1),T=e*n;
+$('#v1').textContent=fmt(p);$('#v2').textContent=fmt(d);$('#v3').textContent=y;$('#v4').textContent=rt;tween('o1',e);tween('o2',T-P);tween('o3',T+d)}
+['pr','dp','yr','rt'].forEach(i=>document.getElementById(i).oninput=emi);emi();
+// forms (saved in localStorage — demo replacement for the MongoDB backend)
+tf.onsubmit=e=>{e.preventDefault();const a=ld('vb',[]);a.push({...Object.fromEntries(new FormData(tf)),at:Date.now()});localStorage.vb=JSON.stringify(a);tf.style.display='none';ok.style.display='block'};
+cf.onsubmit=e=>{e.preventDefault();const a=ld('vm',[]);a.push(Object.fromEntries(new FormData(cf)));localStorage.vm=JSON.stringify(a);cf.reset();toast('Message sent — thank you!')};
+// scroll effects, reveal, counters
+addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>40));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('on');io.unobserve(e.target);
+e.target.querySelectorAll('[data-to]').forEach(c=>{const to=+c.dataset.to,t0=performance.now();(function f(t){const p=Math.min((t-t0)/1600,1);c.textContent=Math.round(to*p);if(p<1)requestAnimationFrame(f)})(t0)});
+e.target.querySelectorAll('[data-w]').forEach(b=>b.style.width=b.dataset.w+'%')}),{threshold:.15});
+function reveal(){document.querySelectorAll('.rv:not(.on)').forEach(e=>io.observe(e))}
+draw();document.querySelectorAll('#lk a').forEach(a=>a.addEventListener('click',()=>lk.classList.remove('o')));
+</script></body></html>
